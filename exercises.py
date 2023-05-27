@@ -14,11 +14,19 @@ def functionList():
 def functionTuple():
 
     tupleOne=("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday")
-    
+
     i=int(0)
     while i<7:
         print(tupleOne[i])
         i=i+1
 
+def functionDictionary():
+
+    dictionary={"Name":"Messi","Number":10,"Team":"PSG"}
+    print("The dictionary is: ",dictionary)
+    dictionary["Team"]=input("What would you like Lionel Messi's new team to be?: ")
+    print("Dictionary update: ",dictionary)
+
+functionDictionary()
 functionTuple()
 functionList()
