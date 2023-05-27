@@ -65,18 +65,18 @@ def functionMath():
 
 print("Python practice")
 print("\n1.- List\n2.- Tuple\n3.- Dictionary\n4.- Operation\n")
-option=int(input("Select an option: "))
+optionMenu=input("Select an option: ")
 
-if option==1:
+if optionMenu==1:
     functionList()
 else:
-    if option == 2:
+    if optionMenu == 2:
         functionTuple()
     else:
-        if option ==3:
+        if optionMenu ==3:
             functionDictionary()
         else:
-            if option==4:
+            if optionMenu==4:
                 functionMath()
             else:
                 print("ERROR")
