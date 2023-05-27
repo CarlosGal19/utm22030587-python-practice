@@ -32,10 +32,39 @@ def functionDictionary():
 
 def functionMath():
 
-    print("OPERATIONS\n")
+    def addition(a,b):
+        return a+b
+    def substraction(a,b):
+        return a-b
+    def multiplication(a,b):
+        return a*b
+    def division(a,b):
+        return a/b
 
-print("Python practice")
-print("1.- List \n 2.- Tuple \n 3.- Dictionary \n 4.- Operation")
+    print("OPERATIONS\n")
+    a=int(input("Enter a number: "))
+    b=int(input("Enter another number: "))
+    print("Select an operation")
+    print("\n1.- Addition\n 2.- Substraction \n 3.- Multiplication\n 4.-Division")
+
+    option=int(input("Select an option: "))
+
+    if option==1:
+        print("The addition of {0} and {1} is: ".format(a,b), addition(a,b))
+    else:
+        if option == 2:
+            print("The substraction of {0} and {1} is: ".format(a,b), substraction(a,b))
+        else:
+            if option ==3:
+                print("The multiplication of {0} and {1} is: ".format(a,b), multiplication(a,b))
+            else:
+                if option==4:
+                    print("The multiplication of {0} and {1} is: ".format(a,b), division(a,b))
+                else:
+                    print("ERROR")
+
+print("Python practice\n")
+print("\n1.- List \n 2.- Tuple \n 3.- Dictionary \n 4.- Operation\n")
 option=int(input("Select an option: "))
 
 if option==1:
