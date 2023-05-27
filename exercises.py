@@ -45,7 +45,7 @@ def functionMath():
     a=int(input("Enter a number: "))
     b=int(input("Enter another number: "))
     print("Select an operation")
-    print("\n1.- Addition\n 2.- Substraction \n 3.- Multiplication\n 4.-Division")
+    print("\n1.- Addition\n2.- Substraction \n3.- Multiplication\n4.-Division")
 
     option=int(input("Select an option: "))
 
@@ -63,8 +63,8 @@ def functionMath():
                 else:
                     print("ERROR")
 
-print("Python practice\n")
-print("\n1.- List \n 2.- Tuple \n 3.- Dictionary \n 4.- Operation\n")
+print("Python practice")
+print("\n1.- List\n2.- Tuple\n3.- Dictionary\n4.- Operation\n")
 option=int(input("Select an option: "))
 
 if option==1:
