@@ -1,5 +1,6 @@
 def functionList():
 
+    print("LIST\n")
     listOne=[7,54,102,903,1]
 
     position=int( input("In which position do you want to save the entered number?: ") )
@@ -13,6 +14,7 @@ def functionList():
 
 def functionTuple():
 
+    print("TUPLE\n")
     tupleOne=("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday")
 
     i=int(0)
@@ -22,11 +24,30 @@ def functionTuple():
 
 def functionDictionary():
 
+    print("DICTIONARY\n")
     dictionary={"Name":"Messi","Number":10,"Team":"PSG"}
     print("The dictionary is: ",dictionary)
     dictionary["Team"]=input("What would you like Lionel Messi's new team to be?: ")
     print("Dictionary update: ",dictionary)
 
-functionDictionary()
-functionTuple()
-functionList()
+def functionMath():
+
+    print("OPERATIONS\n")
+
+print("Python practice")
+print("1.- List \n 2.- Tuple \n 3.- Dictionary \n 4.- Operation")
+option=int(input("Select an option: "))
+
+if option==1:
+    functionList()
+else:
+    if option == 2:
+        functionTuple()
+    else:
+        if option ==3:
+            functionDictionary()
+        else:
+            if option==4:
+                functionMath()
+            else:
+                print("ERROR")
