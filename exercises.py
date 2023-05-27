@@ -47,7 +47,7 @@ def functionMath():
     print("Select an operation")
     print("\n1.- Addition\n2.- Substraction \n3.- Multiplication\n4.-Division")
 
-    option=int(input("Select an option: "))
+    option=input("Select an option: ")
 
     if option==1:
         print("The addition of {0} and {1} is: ".format(a,b), addition(a,b))
