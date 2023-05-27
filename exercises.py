@@ -11,4 +11,14 @@ def functionList():
     for i in listOne:
         print (i)
 
+def functionTuple():
+
+    tupleOne=("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday")
+    
+    i=int(0)
+    while i<7:
+        print(tupleOne[i])
+        i=i+1
+
+functionTuple()
 functionList()
