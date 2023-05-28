@@ -32,48 +32,47 @@ def functionDictionary():
 
 def functionMath():
 
-    def addition(a,b):
-        return a+b
-    def substraction(a,b):
-        return a-b
-    def multiplication(a,b):
-        return a*b
-    def division(a,b):
-        return a/b
+    def operation(operand, firstNumber, secondNumber):
+        if operand == '+':
+            result = firstNumber + secondNumber
+        else :
+            if operand == '-':
+                result = firstNumber - secondNumber
+            else:
+                if operand == '*':
+                    result = firstNumber * secondNumber
+                else:
+                    if operand == '/':
+                        if secondNumber == 0:
+                            print("Error: Division by zero is not allowed.")
+                            return None
+                        result = firstNumber / secondNumber
+                    else:
+                        print("Error: Invalid operand.")
+                        return None
+
+        return result
 
     print("OPERATIONS\n")
-    a=int(input("Enter a number: "))
-    b=int(input("Enter another number: "))
-    print("Select an operation")
-    print("\n1.- Addition\n2.- Substraction \n3.- Multiplication\n4.-Division")
+    operand = input("Enter an operand (+, -, /, *): ")
+    firstNumber = int(input("Enter the first number: "))
+    secondNumber = int(input("Enter the second number: "))
 
-    option=input("Select an option: ")
-
-    if option==1:
-        print("The addition of {0} and {1} is: ".format(a,b), addition(a,b))
-    else:
-        if option == 2:
-            print("The substraction of {0} and {1} is: ".format(a,b), substraction(a,b))
-        else:
-            if option ==3:
-                print("The multiplication of {0} and {1} is: ".format(a,b), multiplication(a,b))
-            else:
-                if option==4:
-                    print("The multiplication of {0} and {1} is: ".format(a,b), division(a,b))
-                else:
-                    print("ERROR")
+    result = operation(operand, firstNumber, secondNumber)
+    if result is not None:
+        print("Result:", result)
 
 print("Python practice")
 print("\n1.- List\n2.- Tuple\n3.- Dictionary\n4.- Operation\n")
-optionMenu=input("Select an option: ")
+optionMenu=int(input("Select an option: "))
 
 if optionMenu==1:
     functionList()
 else:
-    if optionMenu == 2:
+    if optionMenu==2:
         functionTuple()
     else:
-        if optionMenu ==3:
+        if optionMenu==3:
             functionDictionary()
         else:
             if optionMenu==4:
